@@ -9,6 +9,7 @@ pipeline {
     stage('checkout-code') {
       steps {
         git(url: 'https://github.com/lidorg-dev/node-hello.git', branch: 'master', changelog: true, poll: true)
+        sh 'echo "Hello World"'
       }
     }
 
