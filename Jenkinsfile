@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('checkout-code') {
       steps {
-        git(url: 'https://github.com/Meny007/node-hello.git', branch: 'master', changelog: true, poll: true)
+        git(url: 'https://github.com/Meny007/node-hello.git', branch: 'master', changelog: true)
       }
     }
 
