@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('checkout-code') {
       steps {
-        sh 'echo "hello world 2"'
+        git(url: 'https://github.com/Meny007/node-hello.git', branch: 'master', changelog: true, poll: true)
       }
     }
 
